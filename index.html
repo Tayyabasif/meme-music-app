@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <ul>
+            <li id="time">8:00 pm</li>
+            <li class="status"><span class="live-dot"></span><p class="live-data">26 labourers on site</p></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLafSq5UblCNWzrBiEOwBeIdoU8AFXfTqp" target="_blank" >Playlist</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>पप्पू<br>कारपेंटर</h1>
+        <div id="player">
+            
+            <div class="pel" id="playlist">
+                <img id="thumbnail" src="images/music.png" alt="">
+            </div>
+
+            <div class="pel" id="meta-data">
+                <p id="title">Current Song</p>
+                <p id="author">Singer</p>
+                <input type="range" id="slider" value="0" min="0" max="100">
+                <p id="progress">0:00/1:00</p>
+            </div>
+            
+            <div class="pel" id="controls">
+                <button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+                <button id="play-pause"><i class="fa-solid fa-circle-play"></i></button> 
+                <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+                <button id="library"><i class="fa-solid fa-bars-staggered"></i></button>
+                <div id="oplayer"></div>
+            </div>
+            
+        </div>
+    </main>
+    
+</body>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</html>
