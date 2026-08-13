@@ -137,6 +137,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(255,255,255,0.16);
     transition: transform 0.1s ease;
 }
 
@@ -175,7 +176,7 @@ button{
 }
 
 #prev:hover, #next:hover, #library:hover{
-    background: rgba(255,255,255,0.35);
+    
     transform: scale(1.05);
 }
 
