@@ -217,14 +217,17 @@ button{
 }
 
 @media (max-width: 600px) {
+
+    
+
     #player{
-        width: 85vw;
+        width: 80vw;
         height: 170px;
         border-radius: 30px;
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
-        padding-bottom: 15px;
+        gap: 25px;
+        padding: 15px 22px;
 
     }
 
@@ -243,20 +246,20 @@ button{
     }
 
     #playlist img{
-    width: 63px;
-    height: 63px;
+    width:  58px;
+    height: 58px;
     border-radius: 50%;
 }
     
     #meta-data{
-        width: 80%;
+        width: 75%;
         
     } 
     
     #controls{
-        width: 80%;
+        width: 60%;
         display: flex;
-        gap: 4.5em;
+        gap: 10%;
     }
 
   
