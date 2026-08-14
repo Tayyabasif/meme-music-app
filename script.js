@@ -57,6 +57,18 @@ var state = "paused";
        player.nextVideo();
     });
 
+    const shuffle = document.querySelector("#shuffle");
+    let isShuffle = true;
+
+    shuffle.addEventListener("click", () => {
+        isShuffle = !isShuffle;
+
+        player.setShuffle(isShuffle);
+
+        shuffle.classList.toggle("active");
+    });
+
+    
     const previous = document.querySelector("#prev");
 
     previous.addEventListener("click", () => {
@@ -147,6 +159,10 @@ function setThumbnail() {
         setTitle();
         setAuthor();
         setThumbnail();
+        event.target.setShuffle(true);
+        setTimeout(() => {
+            event.target.playVideo();
+        }, 500);
 
         
      }
